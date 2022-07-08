@@ -21,24 +21,22 @@ class DonutMaker {
     }
 
     addAutoClicker(){
-        if(this.numDonuts >= 100){
+        if(this.numDonuts >= this.costOfautoclicker){
             this.numDonuts -= this.costOfautoclicker;
             this.numAutoclickers += 1;
-        }
-        if(this.numAutoclickers >= 2){
             this.costOfautoclicker += this.costOfautoclicker*0.1;
         }
-
+        
         if(this.numMultiplier === 1){
             this.numDonuts += 1*1.2;
         } else if(this.numMultiplier >= 2){
            this.numDonuts += Math.pow(1.2,this.numMultiplier);
         }
+       
     }
+   
 
-    addDonutByAutoClicker(){
-        this.numDonuts += this.numAutoclickers;
-    }
+    
 
     addMultiplier(){
         if(this.numDonuts >= 10){

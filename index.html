@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donut Clicker</title>
-  </head>
-  <body>
-    <main>
-      <button id ="donut_clicker">Add donut</button>
-      <section class="donutCount">Donut Count</section>
-    <div class="container"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donut Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1 class="donutCount"></h1>
+    <button class="addDonutBtn">Add Donut</button>
+    <h4 class="autoClickerCount"></h4>
+    <h4 class="autoClickerCost"></h4>
+    <button class="addAutoClickerBtn">Add Auto Clicker</button>
+    <h3 class="multiplierCount"></h3>
+    <h3 class="multiplierCost"></h3>
+    <button class="multiplierBtn">Add Multiplier</button>
+    <div class="container">
+      <header class="header">
+        <div class="dropdown">
+          <button onclick="info()" class="dropbtn">Info</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">About the Donut Shop</a>
+            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Our Inspiration</a>
+            <a href="https://grullonvictor06.github.io/" target="_blank">The Developer</a>
+          </div>
+        </div>
+      </header>
+    </div>
     <script src="./index.js"></script>
-    </main>
-  </body>
+    <script src="./DonutMaker.js"></script>
+  </main>
+</body>
+
 </html>
