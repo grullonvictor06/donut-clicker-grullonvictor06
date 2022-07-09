@@ -11,6 +11,10 @@ const multiplierCost = document.querySelector('.multiplierCost');
 const DonutShop = new DonutMaker(0,0,100,0,10);
 updateEveryCount();
 
+function info() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
 addDonutBtn.addEventListener("click", ()=>{
   DonutShop.addDonut();
   updateEveryCount();
@@ -27,6 +31,10 @@ addMultiplierBtn.addEventListener("click", ()=>{
   updateEveryCount();
 })
 
+addResetButton.addEventListener("click",()=>{
+  DonutShop.reset();
+  updateEveryCount();
+} )
 
 function autoClick(){
   DonutShop.numDonuts += 1;
@@ -34,27 +42,10 @@ function autoClick(){
 }
 
 function updateEveryCount () {
-  donutCount.innerText = "Donuts:" + DonutShop.numDonuts;
+  donutCount.innerText = "Cliffs:" + DonutShop.numDonuts;
   autoClickerCount.innerText = "Auto Clicker:" + DonutShop.numAutoclickers;
   autoClickerCost.innerText = "Auto Clicker Cost:" +DonutShop.costOfautoclicker;
   multiplierCount.innerText = "Multipliers:" + DonutShop.numMultiplier;
-  multiplierCost.innerText = "MultiplierCost:" + DonutShop.costOfMultiplier;
-}
-
-
-function info() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
+  multiplierCost.innerText = "Multiplier Cost:" + DonutShop.costOfMultiplier;
+  
 }

@@ -1,5 +1,25 @@
 body{
     background-color: aqua;
+    text-align: center;
+}
+
+img {
+  border-radius:50%;
+}
+
+.addDonutBtn {
+  background-image: url(images\cliff.png);
+    padding: 1em;
+    background-size: 400px;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+
+.addDonutBtn:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 
