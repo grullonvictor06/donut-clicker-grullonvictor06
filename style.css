@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: rgb(8, 241, 245);
     text-align: center;
 }
 
@@ -7,8 +7,11 @@ img {
   border-radius:50%;
 }
 
+header {
+  
+}
 .addDonutBtn {
-  background-image: url(images\cliff.png);
+  background-image: url(images\donut.webp);
     padding: 1em;
     background-size: 400px;
     border-radius: 50%;
