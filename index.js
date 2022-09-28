@@ -8,6 +8,7 @@ const autoClickerCost = document.querySelector('.autoClickerCost');
 const multiplierCount = document.querySelector('.multiplierCount');
 const addMultiplierBtn = document.querySelector('.multiplierBtn');
 const multiplierCost = document.querySelector('.multiplierCost');
+const addResetButton = document.querySelector('.reset');
 const DonutShop = new DonutMaker(0,0,100,0,10);
 updateEveryCount();
 
