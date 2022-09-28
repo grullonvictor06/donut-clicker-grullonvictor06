@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 body{
     padding-top: 4rem;
@@ -11,6 +10,9 @@ img {
   border-radius:50%;
 }
 
+a {
+  color: black;
+}
 
 .header{
   z-index: 1;
@@ -40,51 +42,49 @@ img {
 
 .donutCount{
 background-color: pink;
+margin-top: 2rem;
 margin-left: 50rem;
 margin-right: 50rem;
+font-family: "Shrikhand", sans-serif;
 }
 
 .autoClickerCount{
   background-color: pink;
-  margin-left: 55rem;
-  margin-right: 55rem;
+  margin-left: 48rem;
+  margin-right: 48rem;
+  font-family: "Shrikhand", sans-serif;
+  font-size: x-large;
 }
 
 .autoClickerCost{
   background-color: pink;
-  margin-left: 55rem;
-  margin-right: 55rem;
+  margin-left: 50rem;
+  margin-right: 50rem;
+  font-family: "Shrikhand", sans-serif;
+  font-size: large;
 }
 
 .multiplierCount{
   background-color: pink;
-  margin-left: 55rem;
-  margin-right: 55rem;
+  margin-left: 48rem;
+  margin-right: 48rem;
+  font-family: "Shrikhand", sans-serif;
+  font-size: x-large;
 }
 
 .multiplierCost{
   background-color: pink;
-  margin-left: 55rem;
-  margin-right: 55rem;
+  margin-left: 50rem;
+  margin-right: 50rem;
+  font-family: "Shrikhand", sans-serif;
+  font-size: large;
 }
 
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
   .dropdown {
-   font-family: "Lato";
+    font-family: "Shrikhand", sans-serif;
    justify-content: space-between;
    margin-right: 2rem;
+  
   }
   
   .dropdown-content {
@@ -182,6 +182,6 @@ margin-right: 50rem;
 
 .title {
   margin-left: 2rem;
-  font-family: "Bebas Neue";
+  font-family: "Shrikhand", sans-serif;
 }
   .show {display: block;}

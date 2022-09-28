@@ -42,7 +42,7 @@ function autoClick(){
 }
 
 function updateEveryCount () {
-  donutCount.innerText = "Cliffs:" + DonutShop.numDonuts;
+  donutCount.innerText = "Donuts:" + DonutShop.numDonuts;
   autoClickerCount.innerText = "Auto Clicker:" + DonutShop.numAutoclickers;
   autoClickerCost.innerText = "Auto Clicker Cost:" +DonutShop.costOfautoclicker;
   multiplierCount.innerText = "Multipliers:" + DonutShop.numMultiplier;
