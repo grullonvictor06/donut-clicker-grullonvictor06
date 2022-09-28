@@ -29,8 +29,7 @@ img {
     background-size: 400px;
     border-radius: 50%;
     height: 400px;
-    width: 400px;
-    
+    width: 400px;  
 }
 
 .addDonutBtn:hover {
@@ -39,8 +38,35 @@ img {
   transform: scale(1.2);
 }
 
-.container
+.donutCount{
+background-color: pink;
+margin-left: 50rem;
+margin-right: 50rem;
+}
 
+.autoClickerCount{
+  background-color: pink;
+  margin-left: 55rem;
+  margin-right: 55rem;
+}
+
+.autoClickerCost{
+  background-color: pink;
+  margin-left: 55rem;
+  margin-right: 55rem;
+}
+
+.multiplierCount{
+  background-color: pink;
+  margin-left: 55rem;
+  margin-right: 55rem;
+}
+
+.multiplierCost{
+  background-color: pink;
+  margin-left: 55rem;
+  margin-right: 55rem;
+}
 
 .dropbtn {
     background-color: #3498DB;
@@ -56,6 +82,7 @@ img {
   }
   
   .dropdown {
+   font-family: "Lato";
    justify-content: space-between;
    margin-right: 2rem;
   }
