@@ -20,15 +20,15 @@ class DonutMaker {
 
     addAutoClicker(){
         if(this.numDonuts >= this.costOfautoclicker){
-            this.numDonuts -= this.costOfautoclicker;
             this.numAutoclickers += 1;
             this.costOfautoclicker += Math.round(this.costOfautoclicker*0.1);
+            this.numDonuts -= this.costOfautoclicker;
         }
         
             if(this.numMultiplier >= 1){
            this.numDonuts += Math.round(this.numMultiplier*1.2);
         }
-       
+    
     }
    
 

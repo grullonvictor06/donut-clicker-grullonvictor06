@@ -22,9 +22,10 @@ addDonutBtn.addEventListener("click", ()=>{
 })
 
 addAutoClickerBtn.addEventListener("click", ()=>{
+  if(DonutShop.numDonuts >= DonutShop.costOfMultiplier){
   DonutShop.addAutoClicker();
   setInterval(autoClick,1000);
-  updateEveryCount();
+  updateEveryCount();}
 })
 
 addMultiplierBtn.addEventListener("click", ()=>{
@@ -41,6 +42,7 @@ function autoClick(){
   DonutShop.numDonuts += 1;
   updateEveryCount();
 }
+
 
 function updateEveryCount () {
   donutCount.innerText = "Donuts:" + DonutShop.numDonuts;
