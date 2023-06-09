@@ -22,15 +22,17 @@ addDonutBtn.addEventListener("click", ()=>{
 })
 
 addAutoClickerBtn.addEventListener("click", ()=>{
-  if(DonutShop.numDonuts >= DonutShop.costOfMultiplier){
+  if(DonutShop.numDonuts >= DonutShop.costOfautoclicker){
   DonutShop.addAutoClicker();
   setInterval(autoClick,1000);
   updateEveryCount();}
 })
 
 addMultiplierBtn.addEventListener("click", ()=>{
+  if(DonutShop.numDonuts >= DonutShop.costOfMultiplier){
   DonutShop.addMultiplier();
   updateEveryCount();
+}
 })
 
 addResetButton.addEventListener("click",()=>{
